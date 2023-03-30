@@ -7,7 +7,7 @@
     <Version>8.0.0-preview.3</Version>
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageOutputPath>..\artifacts\</PackageOutputPath>
+    <PackageOutputPath>..\nuget-feed\</PackageOutputPath>
   </PropertyGroup>
 
   <ItemGroup>
