@@ -1,0 +1,7 @@
+<Project>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.Maui.Sdk.net8" Condition="'$(TargetFrameworkVersion)' != '' and $([MSBuild]::VersionEquals($(TargetFrameworkVersion), '8.0'))"/>
+  <Import Project="Sdk.targets" Sdk="Microsoft.Maui.Sdk.net7" Condition="'$(TargetFrameworkVersion)' != '' and $([MSBuild]::VersionEquals($(TargetFrameworkVersion), '7.0'))"/>
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk"/>
+
+</Project>
