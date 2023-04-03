@@ -1,4 +1,6 @@
-﻿namespace sample;
+﻿using System.Reflection;
+
+namespace sample;
 
 public partial class MainPage : ContentPage
 {
@@ -7,6 +9,8 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
+
+		MauiVersionLabel.Text = typeof(MauiApp).Assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>().InformationalVersion.Split('+')[0];
 	}
 
 	private void OnCounterClicked(object sender, EventArgs e)
