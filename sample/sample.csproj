@@ -18,7 +18,6 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.sample</ApplicationId>
-		<ApplicationIdGuid Condition="$(TargetFramework.StartsWith('net7'))">F0978BA1-C2CF-41F1-86AD-D04A24980F4B</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -58,7 +57,7 @@
 		<PackageReference Include="Microsoft.Maui.Controls" Version="8.0.0-preview.3.*" />
 	</ItemGroup>
 	<ItemGroup Condition="$(TargetFramework.StartsWith('net7'))">
-		<PackageReference Include="Microsoft.Maui.Controls" Version="7.0.0-ci.net7.16393" />
+		<PackageReference Include="Microsoft.Maui.Controls" Version="7.0.0-ci.net7.*" />
 	</ItemGroup>
 
 	<ItemGroup>
